@@ -49,8 +49,8 @@ app.post('/api/timers', (req, res) => {
 app.post('/api/timers/start', (req, res) => {
   fs.readFile(DATA_FILE, (err, data) => {
 
-    console.log('timer ID is ' + req.body.id);
-    console.log('start time is ' + req.body.start);
+    //console.log('timer ID is ' + req.body.id);
+    //console.log('start time is ' + req.body.start);
 
     const timers = JSON.parse(data);
     timers.forEach((timer) => {
